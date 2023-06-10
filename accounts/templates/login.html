@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.username.label_tag }}
+        {{ form.username }}
+        <br>
+        {{ form.password.label_tag }}
+        {{ form.password }}
+        <br>
+        <label for="beverage">Favorite Beverage:</label>
+        <input type="text" name="beverage" id="beverage">
+        <br>
+        <button type="submit">Login</button>
+      </form>
+      
+</body>
+
+
+
+
+
+</html>
